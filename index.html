@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.header{
+			font-size: 5vh;
+		}
+		.cymbal{
+			background-color: #b5a642;
+			border-radius: 100%;
+			height: 20vh;
+			width: 20vh;
+		}
+
+		.cymbal:active {
+			background-color: #b5b645;
+		}
+
+		.drum{
+			background-color: #f6e6d6;
+			border-radius: 100%;
+			height: 30vh;
+			width: 30vh
+		}
+		.hiss{
+			background-color: lightgray;
+			height:20vh;
+			width:20vh;
+		}
+		.sticks{
+			background-color: white;
+			height:20vh;
+			width: 20vh;
+			color: black;
+		}
+	</style>
+	<script>
+		var q = new Audio('sound/crash.mp3');
+		var w = new Audio('sound/hi-hat.mp3');
+		var e = new Audio('sound/scrape.mp3');
+		var r = new Audio('sound/splash.mp3');
+		var t = new Audio('sound/slide.mp3');
+		var y = new Audio('sound/crash2.mp3');
+		var a = new Audio('sound/hit.mp3');
+		var s = new Audio('sound/floor.tom.mp3');
+		var d = new Audio('sound/medium.tom.mp3');
+		var f = new Audio('sound/snare.mp3');
+		var g = new Audio('sound/small.tom.mp3');
+		var z = new Audio('sound/hiss.mp3');
+		var x = new Audio('sound/sticks.mp3');
+		var c = new Audio('sound/kick.mp3');
+		var v = new Audio('sound/bell.mp3');
+		var key;
+		document.addEventListener('keydown', function (key) {
+			if (key.key == "q") {
+				q.play()
+			}
+			if (key.key == "w") {
+				w.play()
+			}
+			if (key.key == "e") {
+				e.play()
+			}
+			if (key.key == "r") {
+				r.play()
+			}
+			if (key.key == "t") {
+				t.play()
+			}
+			if (key.key == "y") {
+				y.play()
+			}
+			if (key.key == "a") {
+				a.play()
+			}
+			if (key.key == "s") {
+				s.play()
+			}
+			if (key.key == "d") {
+				d.play()
+			}
+			if (key.key == "f") {
+				f.play()
+			}
+			if (key.key == "g") {
+				g.play()
+			}
+			if (key.key == "z") {
+				z.play()
+			}
+			if (key.key == "x") {
+				x.play()
+			}
+			if (key.key == "c") {
+				c.play()
+			}
+			if (key.key == "v") {
+				v.play()
+			}
+		});
+	</script>
+</head>
+
+<body bgcolor="#63666a">
+	<h1 class="header">KEYPRESS: Q W E R T Y; A S D F G; Z X C V</h2>
+	<br>
+	<div class="btnhold">
+		<button class="cymbal" onclick="q.play()">
+			<h2>CRASH</h2>
+		</button>
+		<button class="cymbal" onclick="w.play()">
+			<h2>HI HAT</h2>
+		</button>
+		<button class="cymbal" onclick="e.play()">
+			<h2>SCRAPE</h2>
+		</button>
+		<button class="cymbal" onclick="r.play()">
+			<h2>SPLASH</h2>
+		</button>
+		<button class="cymbal" onclick="t.play()">
+			<h2>SLIDE</h2>
+		</button>
+		<button class="cymbal" onclick="y.play()">
+			<h2>CRASH 2</h2>
+		</button>
+		<br>
+		<button class="cymbal" onclick="a.play()">
+			<h2>HIT</h2>
+		</button>
+		<button class="drum" onclick="s.play()">
+			<h1>FLOOR TOM</h1>
+		</button>
+		<button class="drum" onclick="d.play()">
+			<h1>MEDIUM TOM</h1>
+		</button>
+		<button class="drum" onclick="f.play()">
+			<h1>SNARE</h1>
+		</button>
+		<button class="drum" onclick="g.play()">
+			<h1>SMALL TOM</h1>
+		</button>
+		<br>
+		<button class="hiss" onclick="z.play()">
+			<h2>HISS</h2>
+		</button>
+		<button class="sticks" onclick="x.play()">
+			<h2>STICKS</h2>
+		</button>
+		<button class="drum" onclick="c.play()">
+			<h1>KICK</h1>
+		</button>
+		<button class="cymbal" onclick="v.play()">
+			<h2>BELL</h2>
+		</button>
+	</div>
+</body>
+
+</html>
